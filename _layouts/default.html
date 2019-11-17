@@ -13,32 +13,43 @@
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+    <div class="container">
+      <header class="">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="{{ base.url }}">
+              <img src="{{ site.avatar }}" alt="{{ site.name }}" width="125" height="125">
+            </a>
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
           </div>
+          <div class="navbar-menu">
+            <div class="navbar-end">
+            <a class="navbar-item">
+  Home
+            </a> 
+            </div>
 
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
+            <div class="navbar-end">
+              <!-- navbar items -->
+            </div>
+          </div>
+        </nav>
+      </header>
+    </div>
+
+    <section class="hero is-medium is-light">
+      <div class="hero-body">
+        {{ content }}
       </div>
-    </div>
-
-    <div id="main" role="main" class="container">
-			
-      {{ content }}
-    </div>
+    </section>
 
     <div class="wrapper-footer">
       <div class="container">
