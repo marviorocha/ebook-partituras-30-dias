@@ -16,6 +16,7 @@
   </head>
 
   <body>
+ 
     <div class="container">
       <header class="">
         <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -50,17 +51,26 @@
         {{ content }}
       </div>
     </section>
+    <div class="container">
+      {% include part-one.html %}
+    </div>
 
-    <div class="wrapper-footer">
+      {% include faq.html %}
+    
+      <div class="wrapper-footer">
+
       <div class="container">
         <footer class="footer">
           {% include svg-icons.html %}
         </footer>
       </div>
     </div>
-
+  
     {% include analytics.html %}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" charset="utf-8"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+     <!-- Put Vue JS here -->    
+    <script src="https://unpkg.com/vue"></script>
+    <script src="{{ site.baseurl }}/script.js"></script>
+     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
   </body>
 </html>
