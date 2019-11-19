@@ -17,11 +17,10 @@
       <span  style="font-size: 1.5em; color: #c1c1c1;" class="icon is-large">
         <i class="fas fa-heart fa-5x"></i>
       </span>
-      <h3 class="title is-3">Ipsum cumque eius.</h3>
-      <p class="content is-medium has-text-justify">
-        Adipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus impedit cupiditate.
-      </p>
-    </div>
+      {% if category.name == 'heart' %}
+	{{content}}
+	{% endif %}    
+	</div>
     <div class="column is-4"> <span  style="font-size: 1.5em; color: #c1c1c1;" class="icon is-large">
         <i class="fas fa-music fa-5x"></i>
       </span>
