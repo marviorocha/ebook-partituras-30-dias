@@ -1,0 +1,26 @@
+
+  {% for post in site.categories.ebook %}
+
+  <div class="columns">
+    <div class="column is-offset-1 is-5">
+      <section class="section">
+      
+        <h1 class="title is-1">{{ post.title }}</h1>
+
+        <h2 class="subtitle is-5">
+          {{ post.content | truncate:200 }}
+        </h2>  
+        <a href="{{ site.buy }}" class="button is-medium is-info is-rounded">Comprar Agora</a>
+
+
+      </section> 
+    </div>
+    <div class="column is-6">
+
+      <figure class="image is-740x500">
+        <img src="{{ site.image }}" >
+      </figure>
+    </div>
+
+  </div>
+  {% endfor %}
