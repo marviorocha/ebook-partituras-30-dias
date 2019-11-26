@@ -3,12 +3,38 @@ layout: default
 ---
 
 <div class="container">
+  {% for post in site.posts %}
+
+  <div class="columns">
+    <div class="column is-offset-1 is-5">
+      <section class="section">
+      
+        <h1 class="title is-1"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+        <h2 class="subtitle is-5">
+          {{ post.excerpt }}
+        </h2>  
+        <a href="{{ site.baseurl }}{{ post.url }}" class="button is-medium is-info is-rounded">Comprar Agora</a>
 
 
-
-</div>
-
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
 >>>>>>> 8f2340b3414f058861847b6aa648dbba22643b67
+=======
+      </section> 
+    </div>
+    <div class="column is-6">
+
+      <figure class="image is-740x500">
+        <img src="{{ site.baseurl }}/images/ebook-medium.png" >
+      </figure>
+    </div>
+
+  </div>
+  {% endfor %}
+</div>
+
+{% include about.md %}
+>>>>>>> parent of 8c023d7... add backup to back to kdeneon
