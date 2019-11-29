@@ -8,28 +8,13 @@ name: Marvio Rocha
 # Short bio or description (displayed in the header)
 description: Web Developer from Somewhere
 
+
+url: 
+
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
 
-#
-# Flags below are optional
-#
 
-# Includes an icon in the footer for each username you enter
-footer-links:
-  dribbble:
-  email:
-  facebook:
-  flickr:
-  github: barryclark/jekyll-now
-  instagram:
-  linkedin:
-  pinterest:
-  rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
@@ -39,10 +24,95 @@ disqus:
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics:
 
+# Buynow url for payding product
+homepage:
+  - title: Aprenda partituras em até 30 dias
+    image: /images/ebook-medium.png
+    description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus impedit cupiditate.
+    buynow: https://www.mercadopago.com.br/
+
+
+# sele page button
+
+sele_title: Adquira agora seu exemplar
+sele_description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime
+
+seles:
+  - price: "19.90"
+    title: Por apenas
+    subtitle: "Super desconto de: <s>47.90</s> por apenas"
+    image: /images/ebook-medium.png
+    description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus impedit cupiditate.
+    buynow: https://www.mercadopago.com.br
+
+
+# info site midle
+
+info:
+  - title: Lorem ipsomi dolorAdipisicing
+    description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus impedit cupiditate. 
+    icon: heart
+
+  - title: Lorem ipsomi dolorAdipisicing
+    description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus impedit cupiditate. 
+    icon: music
+
+  - title: Lorem ipsomi dolorAdipisicing
+    description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus impedit cupiditate. 
+    icon: headphones
+
+# FAQ Session site
+  
+faq:
+  - section: Secion 1
+    description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus impedit cupiditate. 
+
+  - section: Secion 2
+    description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus impedit cupiditate. 
+
+  - section: Secion 3
+    description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus impedit cupiditate. 
+
+  - section: Secion 4
+    description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus impedit cupiditate. 
+
+  - section: Secion 5
+    description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus impedit cupiditate. 
+
+# Depoiment session site
+
+depoiment_title: Title the depiment here
+depoiment_description:  Lorem ipsum dolor sit amet, consectetur adipisicing 
+
+
+depoiment:
+  - name: Juju
+    description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus 
+    city: Campos-RJ
+    foto: https://bulma.io/images/placeholders/128x128.png
+
+  - name: Mislene 
+    description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus 
+    city: Macaé 
+    foto: https://bulma.io/images/placeholders/128x128.png
+
+  - name: Guilherme
+    description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus 
+    city: Campos-RJ
+    foto: https://bulma.io/images/placeholders/128x128.png
+
+  - name: Diego
+    description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus 
+    city: Macaé
+    foto: https://bulma.io/images/placeholders/128x128.png
+
+
+
+
+
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
 url:
-
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)

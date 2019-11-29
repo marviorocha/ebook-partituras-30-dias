@@ -1,29 +1,25 @@
 <!-- FAQ -->
-
 <div class="hero  is-light">
   <div class="hero-body">
     <div class="container">
 
-      <div class="columns">
-        <div class="column is-full">
+      <div class="columns is-centered">
+        <div class="column is-9 is-half ">
 
-          <h1 class="title is-2">Consectetur labore excepturi harum voluptatibus?</h1>
+          <h1 class="title is-2 has-text-centered">Consectetur labore excepturi harum voluptatibus?</h1>
+          <h2 class="subtitle is-5 has-text-centered"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga deleniti accusamus
+            nihil libero doloribus odit voluptatem deserunt, odio vel quos consectetur similique quidem sed! Temporibus
+            necessitatibus nisi, ab delectus suscipit ipsa animi, odio molestias illo soluta.</h2>
+          <section class="section">
+            {% for faq in site.faq %}
 
+            <button class="accordion"> <h5 class="title is-5 has-text-weight-bold"><i class="fas fa-plus"></i> {{ faq.section }}</h5> </button>
+            <div class="panel">
+              <p class="content is-size-6">{{ faq.description }}</p>
+            </div>
 
-          <button class="accordion"> <i class="fas fa-plus"></i> Section 1</button>
-          <div class="panel">
-            <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-
-          <button class="accordion"><i class="fas fa-plus"></i> Section 2</button>
-          <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-
-          <button class="accordion"><i class="fas fa-plus"></i> Section 3</button>
-          <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
+            {% endfor %}
+          </section>
 
 
         </div>

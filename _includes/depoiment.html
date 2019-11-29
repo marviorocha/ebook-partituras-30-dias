@@ -1,0 +1,46 @@
+<!-- Depoiment -->
+<div class="section">
+  <div class="container">
+
+    <div class="columns is-centered">
+      <div class="column is-9 is-half ">
+
+        <h1 class="title is-2 has-text-centered">{{ site.depoiment_title }}</h1>
+        <h2 class="subtitle is-5 has-text-centered"> {{ site.depoiment_description }} </h2>
+
+      </div>
+    </div>
+      <!-- start section card -->
+      <div class="columns is-multiline">
+
+        {% for depoiment in site.depoiment %}
+        <div class="column is-6 ">
+
+          <div class="card">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-128x128">
+                    <img src="{{ depoiment.foto }}" class="is-rounded" alt="">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">{{ depoiment.name }}</p>
+                  <p class="subtitle is-6">{{ depoiment.city }}</p>
+                  <p class="content">{{ depoiment.description }}</p>
+                </div>
+              </div>
+
+             
+            </div>
+          </div>
+
+
+        </div>
+
+        {% endfor %}
+
+      </div>
+    </div>
+  </div>
+</div>

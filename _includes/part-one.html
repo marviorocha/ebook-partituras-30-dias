@@ -11,32 +11,18 @@
 
 <section class="section">
   <div class="columns has-text-centered">
+    {% for info in site.info %}
     <div class="column is-4">
 
       <span style="font-size: 1.5em; color: #c1c1c1;" class="icon is-large">
-        <i class="fas fa-heart fa-5x"></i>
+        <i class="fas fa-{{ info.icon }} fa-5x"></i>
       </span>
-      {% if category.name == 'heart' %}
-      {{content}}
-      {% endif %}
-    </div>
-    <div class="column is-4"> <span style="font-size: 1.5em; color: #c1c1c1;" class="icon is-large">
-        <i class="fas fa-music fa-5x"></i>
-      </span>
-      <h3 class="title is-3">Ipsum cumque eius.</h3>
+      <h3 class="title is-3">{{ info.title }}</h3>
       <p class="content is-medium has-text-justify">
-        Adipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus impedit cupiditate.
+        {{ info.description }}
       </p>
     </div>
-    <div class="column is-4">
-
-      <span style="font-size: 1.5em; color: #c1c1c1;" class="icon is-large">
-        <i class="fas fa-headphones-alt fa-5x"></i>
-      </span>
-      <h3 class="title is-3">Ipsum cumque eius.</h3>
-      <p class="content is-medium has-text-justify">
-        Adipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus impedit cupiditate.
-      </p>
-    </div>
+    {% endfor %}
+    
   </div>
 </section>

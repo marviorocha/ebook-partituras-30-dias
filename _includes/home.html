@@ -1,0 +1,26 @@
+
+<div class="container">
+
+{% for home in site.homepage  %}
+    <div class="columns">
+        <div class="column is-offset-1 is-5">
+            <section class="section">
+
+                <h1 class="title is-1">{{ home.title }}</a></h1>
+
+                <h2 class="subtitle is-5">
+                    {{ home.description | truncate: 300}}
+                </h2>
+                <a target="_blank" href="{{ home.buynow }}" class="button is-medium is-info is-rounded">Comprar Agora</a>
+            </section>
+        </div>
+        <div class="column is-6">
+
+            <figure class="image is-740x500">
+                <img src="{{ site.url }}{{ home.image }}">
+            </figure>
+        </div>
+
+    </div>
+{% endfor %}
+</div>

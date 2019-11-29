@@ -21,7 +21,7 @@
       <header class="">
         <nav class="navbar" role="navigation" aria-label="main navigation">
           <div class="navbar-brand">
-            <a class="navbar-item" href="{{ base.url }}">
+            <a class="navbar-item" href="{{ site.baseurl }}">
               <img src="{{ site.avatar }}" alt="{{ site.name }}" width="125" height="125">
             </a>
 
@@ -48,7 +48,8 @@
 
     <section class="hero is-medium is-light">
       <div class="hero-body">
-        {{ content }}
+       
+        {% include home.html %}
       </div>
     </section>
     <div class="container">
@@ -56,15 +57,16 @@
     </div>
 
       {% include faq.html %}
-    
-      <div class="wrapper-footer">
+   
+      {% include autor.html %}
+     
+      {% include depoiment.html %}
+     
+      {% include sale.html %}
 
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
+      {% include footer.html %}
+      
+    
   
     {% include analytics.html %}
      <!-- Put Vue JS here -->    
