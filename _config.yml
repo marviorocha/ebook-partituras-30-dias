@@ -9,17 +9,17 @@ name: Marvio Rocha
 description: Web Developer from Somewhere
 
 
+# If you're hosting your site at a Project repository on GitHub pages
+# (http://yourusername.github.io/repository-name)
+# and NOT your User repository (http://yourusername.github.io)
+# then add in the baseurl here, like this: "/repository-name"
+baseurl: ""
+
 url: 
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
 
-
-
-
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
-disqus:
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics:
@@ -29,8 +29,7 @@ homepage:
   - title: Aprenda partituras em até 30 dias
     image: /images/ebook-medium.png
     description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus impedit cupiditate.
-    buynow: https://www.mercadopago.com.br/
-
+    buynow: https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=96281217-ade156f4-a077-4a47-844e-1275fd4a3ce5
 
 # sele page button
 
@@ -43,7 +42,7 @@ seles:
     subtitle: "Super desconto de: <s>47.90</s> por apenas"
     image: /images/ebook-medium.png
     description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus impedit cupiditate.
-    buynow: https://www.mercadopago.com.br
+    buynow: https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=96281217-ade156f4-a077-4a47-844e-1275fd4a3ce5
 
 
 # info site midle
@@ -108,25 +107,18 @@ depoiment:
 
 
 
-
-
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
-url:
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
-# and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
-
 #
 # !! You don't need to change any of the configuration flags below !!
 #
 
 permalink: /:title/
 
+
+copyright: Todo o material oferecido de propriedade intelectual no site são protegidos por lei dos direitos autorais.
+
+
 # The release of Jekyll Now that you're using
-version: v1.2.0
+version: v1.0.0
 
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:

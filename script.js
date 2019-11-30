@@ -14,3 +14,11 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+function scrollToAnchor(aid){
+    var aTag = $("a[name='"+ aid +"']");
+    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+}
+
+$("#autor").click(function() {
+   scrollToAnchor('autor');
+});

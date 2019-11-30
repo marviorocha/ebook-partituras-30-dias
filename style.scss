@@ -6,42 +6,11 @@
 //
 
 
+@import "highlights";
+@import "background";
 @import "variables";
-// Syntax highlighting @import is at the bottom of this file
+ 
 
-/**************/
-/* BASE RULES */
-/**************/
-
-// Fixes images in popup boxes from Google Translate
-.site-name {
-  margin: 0;
-  color: $darkGray;
-  cursor: pointer;
-  font-family: $helveticaNeue;
-  font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 1px;
-}
-
-.site-description {
-  margin: -5px 0 0 0;
-  color: $gray;
-  font-size: 16px;
-
-  @include mobile {
-    margin: 3px 0;
-  }
-}
-
-
-
-//
-// .main
-//
-
-// accondeon
-//
 
 .accordion {
   background-color: #eee;
@@ -61,7 +30,7 @@
 }
 
 .panel {
-  padding: 0 18px;
+  padding: 0 25px;
   display: none;
   background-color: white;
   overflow: hidden;
@@ -70,5 +39,3 @@
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-@import "highlights";
-@import "svg-icons";

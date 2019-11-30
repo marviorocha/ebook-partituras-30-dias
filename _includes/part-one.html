@@ -1,7 +1,7 @@
 <section class="section">
-  <div class="columns">
-    <div class="column is-half is-offset-3 has-text-centered">
-      <h1 class="title is-1">
+  <div class="columns is-mobile">
+    <div class="column is-half is-offset-2 is-8 has-text-centered">
+      <h1 class="title is-2">
         Dolor eveniet officia esse minusi
       </h1>
       <h2 class="subtitle is-5"> Lorem nemo labore ab.</h2>
@@ -14,15 +14,18 @@
     {% for info in site.info %}
     <div class="column is-4">
 
-      <span style="font-size: 1.5em; color: #c1c1c1;" class="icon is-large">
+      </span>
+
+      <span class="icon is-large">
         <i class="fas fa-{{ info.icon }} fa-5x"></i>
       </span>
+
       <h3 class="title is-3">{{ info.title }}</h3>
       <p class="content is-medium has-text-justify">
         {{ info.description }}
       </p>
     </div>
     {% endfor %}
-    
+
   </div>
 </section>
