@@ -1,6 +1,5 @@
-#! shell script to test build
-
+#!/usr/bin/env bash
 set -e # halt script on error
 
 bundle exec jekyll build
-bundle exec htmlproofer ./_site
+bundle exec htmlproofer ./docs
