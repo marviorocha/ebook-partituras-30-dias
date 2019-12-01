@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="has-navbar-fixed-top">
 
 <head>
   <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
@@ -17,52 +17,10 @@
 
 </head>
 
-<body>
+<body> 
 
   <div class="container">
-    <header class="">
-      <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="{{ site.baseurl }}">
-            <img src="{{ site.avatar }}" alt="{{ site.name }}" width="125" height="125">
-          </a>
-
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-        <div class="navbar-menu">
-          <div class="navbar-end">
-            
-            <div class="level">
-
-              <div class="level-item">
-                <a id="link" class="navbar-item">
-                  Home
-                </a>
-              </div>
-               <div class="level-item">
-                <a id="link" class="navbar-item">
-                  Sobre
-                </a>
-              </div>
-              <div class="level-item">
-                <a id="autor" class="navbar-item">
-                  Autor
-                </a>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="navbar-end">
-            <!-- navbar items -->
-          </div>
-        </div>
-      </nav>
-    </header>
+      {% include navigation.html %}   
   </div>
 
   <section class="hero is-medium is-light has-background is-transparent">

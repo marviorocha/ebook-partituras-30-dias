@@ -25,6 +25,11 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 google_analytics:
 
 # Buynow url for payding product
+
+collections:
+  pagina:
+    output: true
+
 homepage:
   - title: Aprenda partituras em até 30 dias
     image: /images/ebook-medium.png
@@ -35,15 +40,6 @@ homepage:
 
 sele_title: Adquira agora seu exemplar
 sele_description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime
-
-seles:
-  - price: "19.90"
-    title: Por apenas
-    subtitle: "Super desconto de: <s>47.90</s> por apenas"
-    image: /images/ebook-medium.png
-    description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus impedit cupiditate.
-    buynow: https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=96281217-ade156f4-a077-4a47-844e-1275fd4a3ce5
-
 
 # info site midle
 
@@ -62,22 +58,6 @@ info:
 
 # FAQ Session site
   
-faq:
-  - section: Secion 1
-    description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus impedit cupiditate. 
-
-  - section: Secion 2
-    description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus impedit cupiditate. 
-
-  - section: Secion 3
-    description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus impedit cupiditate. 
-
-  - section: Secion 4
-    description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus impedit cupiditate. 
-
-  - section: Secion 5
-    description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus impedit cupiditate. 
-
 # Depoiment session site
 
 depoiment_title: Title the depiment here
@@ -114,7 +94,11 @@ depoiment:
 permalink: /:title/
 
 
-copyright: Todo o material oferecido de propriedade intelectual no site são protegidos por lei dos direitos autorais.
+copyright: Todo o material oferecido de propriedade intelectual no site são protegidos por lei dos direitos autorais (Lei nº 9.610).
+
+
+include:
+  - _pages
 
 
 # The release of Jekyll Now that you're using

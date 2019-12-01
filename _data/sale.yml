@@ -1,0 +1,7 @@
+  - price: "19.90"
+    title: Por apenas
+    subtitle: "Super desconto de: <s>47.90</s> por apenas"
+    image: /images/ebook-medium.png
+    description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus impedit cupiditate.
+    buynow: https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=96281217-ade156f4-a077-4a47-844e-1275fd4a3ce5
+
