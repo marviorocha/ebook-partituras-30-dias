@@ -1,34 +1,32 @@
  <header>
-      <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-        
 
-        </div>
-        <div class="navbar-menu">
-          <div class="navbar-end">
-            
-            <div class="level">
+   <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+ 
+      <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+     <div id="navMenu" class="navbar-menu">
+       <div class="navbar-end">
 
-              <div class="level-item">
-                <a id="link" class="navbar-item is-text-centered">
-                  Home
-                </a>
-              </div>
-               <div class="level-item">
-               <img src="/images/logo.png" alt="">
-              </div>
-              <div class="level-item">
-                <a id="autor" class="navbar-item is-text-centered">
-                  Autor
-                </a>
-              </div>
-            </div>
+         <div class="level">
+           {% for nav in site.data.nav %}
+           <div class="level-item">
+             <a id="{{ nav.url }}" class="navbar-item is-text-centered">
+               {{ nav.title }}
+             </a>
+           </div>
+           {% endfor %}
 
-          </div>
+         </div>
 
-          <div class="navbar-end">
-            <!-- navbar items -->
-          </div>
-        </div>
-      </nav>
-    </header>
+       </div>
+       <div class="navbar-end">
+      
+       </div>
+
+       
+     </div>
+   </nav>
+ </header>

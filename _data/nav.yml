@@ -1,10 +1,21 @@
 - title: Home
-  url: home
+  url: link1
 
-- title: O ebook
-  url: ebook
+- title: O que você aprende?
+  url: link2
 
-- title: Autor
-  url: autor
+- title: Dúvidas
+  url: link3
+
+- title: Sobre Autor
+  url: link4
+
+- title: Depoimentos
+  url: link5
+
+- title: Preço
+  url: link6
+
+
 
 

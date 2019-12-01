@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1664 388" width="1664" height="388">
+	<style>
+		tspan { white-space:pre }
+		.txt0 { font-size: 36px;fill: #5e5e5e;font-family: "Archivo";font-weight: 400 } 
+		.txt1 { font-size: 36px;line-height: 50px;fill: #38b6ff;font-family: "Archivo";font-weight: 400 } 
+		.txt2 { font-size: 22px;line-height: 50px;fill: #5e5e5e;font-family: "Archivo";font-weight: 400 } 
+		.shp3 { fill: #38b6ff } 
+	</style>
+	<g id="Logo">
+		<text id="MASTER MUSIC ACADEMY " style="transform: matrix(3.377,0,0,3.377,460.837,85.442)" >
+			<tspan x="0" y="36" class="txt0">MASTER</tspan>
+			<tspan x="0" y="76.32" class="txt1">MUSIC ACADEMY</tspan>
+		</text>
+		<text id="Escola de Música online " style="transform: matrix(3.377,0,0,3.377,468.001,374.694)" >
+			<tspan x="0" y="0" class="txt2">Escola de Música online</tspan>
+		</text>
+		<path id="Path 5" class="shp3" d="M331.81 0L0 0L0 55.3L331.81 55.3L331.81 0ZM331.81 110.6L0 110.6L0 165.91L331.81 165.91L331.81 110.6ZM0 276.51L221.21 276.51L221.21 221.21L0 221.21L0 276.51ZM387.12 0L387.12 226.32C378.41 223.14 369.28 221.21 359.47 221.21C313.7 221.21 276.51 258.4 276.51 304.16C276.51 349.93 313.7 387.12 359.47 387.12C405.23 387.12 442.42 349.93 442.42 304.16L442.42 55.3L525.37 55.3L525.37 0L387.12 0Z" />
+	</g>
+</svg>
