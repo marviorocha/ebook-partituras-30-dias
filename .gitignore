@@ -5,6 +5,4 @@ _site
 .jekyll-metadata
 .bundle
 .sass-cache
-Gemfile
-Gemfile.lock
 package.json
