@@ -61,3 +61,14 @@ $("#link3").click(function() { scrollToAnchor('link3') });
 $("#link4").click(function() { scrollToAnchor('link4') }); 
 $("#link5").click(function() { scrollToAnchor('link5') }); 
 $("#link6").click(function() { scrollToAnchor('link6') }); 
+
+
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
