@@ -1,7 +1,7 @@
 backend:
   name: Landing Page
   branch: master # Branch to update (optional; defaults to master)
-media_folder: 'assets/uploads'
+media_folder: '/images/'
 collections:
   - name: 'blog'
     label: 'Blog'
