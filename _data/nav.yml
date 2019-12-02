@@ -1,21 +1,2 @@
-- title: Home
-  url: link1
-
-- title: O que você aprende?
-  url: link2
-
-- title: Dúvidas
-  url: link3
-
-- title: Sobre Autor
-  url: link4
-
-- title: Depoimentos
-  url: link5
-
-- title: Preço
-  url: link6
-
-
-
-
+name: Principal
+link: link1
