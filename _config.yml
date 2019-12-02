@@ -30,11 +30,6 @@ collections:
   pagina:
     output: true
 
-homepage:
-  - title: Aprenda partituras em até 30 dias
-    image: /images/ebook-medium.png
-    description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus impedit cupiditate.
-    buynow: https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=96281217-ade156f4-a077-4a47-844e-1275fd4a3ce5
 
 # sele page button
 

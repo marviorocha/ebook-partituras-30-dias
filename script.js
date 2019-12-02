@@ -1,5 +1,8 @@
 
-
+  $("document").ready(function(){
+var image = document.getElementsByClassName('thumbnail');
+new simpleParallax(image);
+  });
 /* navigation menu */
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -63,12 +66,16 @@ $("#link5").click(function() { scrollToAnchor('link5') });
 $("#link6").click(function() { scrollToAnchor('link6') }); 
 
 
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
+
+$(function() {
+  $("#login").on("click", function(e) {
+    e.preventDefault();
+    var authenticator = new netlify.default ({});
+    authenticator.authenticate({provider:"github", scope: "user"}, function(err, data) {
+      if (err) {
+        return $("#output").text("Error Authenticating with GitHub: " + err);
       }
+      $("#output").text("Authenticated with GitHub. Access Token: " + data.token);
     });
-  }
+  });
+});

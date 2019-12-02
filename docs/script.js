@@ -1,5 +1,8 @@
 
-
+  $("document").ready(function(){
+var image = document.getElementsByClassName('thumbnail');
+new simpleParallax(image);
+  });
 /* navigation menu */
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -61,3 +64,18 @@ $("#link3").click(function() { scrollToAnchor('link3') });
 $("#link4").click(function() { scrollToAnchor('link4') }); 
 $("#link5").click(function() { scrollToAnchor('link5') }); 
 $("#link6").click(function() { scrollToAnchor('link6') }); 
+
+
+
+$(function() {
+  $("#login").on("click", function(e) {
+    e.preventDefault();
+    var authenticator = new netlify.default ({});
+    authenticator.authenticate({provider:"github", scope: "user"}, function(err, data) {
+      if (err) {
+        return $("#output").text("Error Authenticating with GitHub: " + err);
+      }
+      $("#output").text("Authenticated with GitHub. Access Token: " + data.token);
+    });
+  });
+});
