@@ -1,10 +1,13 @@
 backend:
-  name: test-repo
-  
+  name: github
+  repo: marviorocha/ebook-partituras-30-dias
   
 media_folder: 'images/uploads'
 
 collections:
+
+# Home Page Settings
+
 - name: "home"
   label: "Inicial"
   files:
@@ -17,7 +20,7 @@ collections:
         - {label: "Descrição", name: "description", widget: "text"}
         - {label: "Button URL", name: "buynow", widget: "string"}
 
-# menu navigation 
+# Menu navigation 
 
 - name: "menu"
   label: "Menu"
@@ -27,6 +30,7 @@ collections:
     - label: "Menu"
       name: "menu"
       file: "_data/nav.yml"
+      widget: "list"
       fields:
         - {label: "Menu", name: name, widget: string}
         - {label: "link", name: link, widget: string}
