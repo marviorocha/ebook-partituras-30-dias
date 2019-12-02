@@ -66,7 +66,6 @@ $("#link5").click(function() { scrollToAnchor('link5') });
 $("#link6").click(function() { scrollToAnchor('link6') }); 
 
 
-
 $(function() {
   $("#login").on("click", function(e) {
     e.preventDefault();
