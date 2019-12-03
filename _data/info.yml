@@ -1,0 +1,18 @@
+# info title sites
+
+info_title: Dolor eveniet officia esse minusi
+info_description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt
+
+info:
+  - title: Lorem ipsomi dolorAdipisicing
+    description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus impedit cupiditate. 
+    icon: heart
+
+  - title: Lorem ipsomi dolorAdipisicing
+    description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus impedit cupiditate. 
+    icon: music
+
+  - title: Lorem ipsomi dolorAdipisicing
+    description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus impedit cupiditate. 
+    icon: headphones
+

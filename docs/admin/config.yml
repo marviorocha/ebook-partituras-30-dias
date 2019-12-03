@@ -1,40 +1,122 @@
 backend:
-  name: github
-  repo: marviorocha/ebook-partituras-30-dias
-  branch: master # Branch to update (master by default)
-  
+  name: test-repo
+  branch: master # Branch to update (optional; defaults to master)
+  site_url: https://partituras30dias.showbiz.mus.br/
+  display_url: https://partituras30dias.showbiz.mus.br/
 media_folder: 'images/uploads'
 
 collections:
 
 # Home Page Settings
+- name: "config"
+  label: "Site Config"
+  editor: 
+    preview: false
+  files:
+    - label: "Geral"
+      name: "geral"
+      file: "_data/global.yml"
+      fields:
+        - {label: Title, name: set_title, widget: string}
+        - {label: Descrição, name: set_description, widget: string}
+        - {label: Google Analytics, name: google_analytics, widget: string}
+        - {label: Copyright, name: copyright, widget: string}
+    
+    - label: "Navigation"
+      name: "navigation"
+      file: "_data/nav.yml"
+      fields:
+        - label: "Itens do menu"
+          name: "items"
+          widget: "list"
+          fields:
+            - {label: Name, name: title, widget: string}
+            - {label: Link, name: url, widget: string}
+    
+# Depoiments _data/depoiment.yml
+- name: "Depoiment"
+  label: "Depoimentos"
+  files:
+    - label: "Depoiments"
+      name: "depoiment"
+      file: "_data/depoiment.yml"
+      fields:
+        - label: "Depoimentos"
+          name: "depoimentos"
+          widget: "list"
+          fields:
+            - {label: Name, name: name, widget: string}
+            - {label: Cidade, name: city, widget: string}
+            - {label: Descrição, name: description, widget: text}
+            - {label: Foto, name: image, widget: image}
+
+
+# Ebook _data/home.yml
 
 - name: "home"
-  label: "Inicial"
-  create: true
+  label: "Ebook"
   editor:
     preview: false
   files:
-    - label: "Home"
-      name: "home-page"
+    - label: "Ebook"
+      name: "home"
       file: "_data/home.yml"
       fields:
         - {label: "Titulo", name: "title", widget: "string"}
         - {label: "Ebook Imagem", name: "image", widget: "image", default: "/images/ebook-medium.png"}
         - {label: "Descrição", name: "description", widget: "text"}
-        - {label: "Button URL", name: "buynow", widget: "string"}
+        - {label: "URL", name: "link", widget: "string"}
+        - {label: "Button", name: "link", widget: "string"}
 
-# Menu navigation 
+# Sale Page _data/sale.yml
 
-- name: "nav"
-  label: "Menu"
+    - label: "Sale Page"
+      name: "sale"
+      file: "_data/sale.yml"
+      fields:
+        - {label: "Titulo", name: "sele_title", widget: "string"}
+        - {label: "Price", name: price, widget: "string"}
+        - {label: "Descrição", name: sele_description, widget: "text"}
+        - {label: "Link", name: "link", widget: "string"}
+        - {label: "Button", name: "button", widget: "string"}
+        - {label: "Ebook Imagem", name: "image", widget: "image", default: "/images/ebook-medium.png"}
+
+# FAQ Page
+- name: "Faq"
+  label: "Faq"
   editor:
     preview: false
   files:
-    - label: "Menu"
-      name: "navigation"
-      file: "_data/nav.yml"
-      widget: "list"
+    - label: "FAQ"
+      name: "faq"
+      file: "_data/faq.yml"
       fields:
-        - {label: "Menu", name: title, widget: string}
-        - {label: "Link", name: url, widget: string}
+        - {label: Title, name: title, widget: string}
+        - {label: Sub title, name: subtitle, widget: string}
+        - label: "FAQ"
+          name: "Item faq"
+          widget: "list"
+          fields:
+            - {label: Section, name: section, widget: string}
+            - {label: Descripion, name: description, widget: text}
+
+# sale page for build
+- name: "Section"
+  label: "Add Section"
+  editor:
+    preview: false
+  files:
+    - label: "Section"
+      name: "Sections site"  
+      file: "_data/info.yml"
+      fields:
+           - {label: Title, name: info_title, widget: string}
+           - {label: Sub title, name: info_description, widget: string}
+           - label: "Sections Add"
+             name: "section"
+             widget: "list"
+             fields:
+                - {label: Info, name: title, widget: string}
+                - {label: Description, name: description, widget: text}
+                - {label: Icon, name: icon, widget: string}
+
