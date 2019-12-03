@@ -1,26 +1,26 @@
 <a name="link1"></a>
 <div class="container">
 
-{% for home in site.data.home.page %}
+ 
     <div class="columns">
         <div class="column is-offset-1 is-5">
             <section class="section">
 
-                <h1 class="title is-1">{{ home.title }}</a></h1>
+                <h1 class="title is-1">{{ site.data.home.title }}</a></h1>
 
                 <h2 class="subtitle is-5">
-                    {{ home.description | truncate: 300}}
+                    {{ site.data.home.description | truncate: 300}}
                 </h2>
-                <a target="_blank" href="{{ home.buynow }}" class="button is-medium is-info is-rounded">Comprar Agora</a>
+                <a target="_blank" href="{{ site.data.home.buynow }}" class="button is-medium is-info is-rounded">Comprar Agora</a>
             </section>
         </div>
         <div class="column is-6">
 
             <figure class="image is-740x500">
-                <img alt="{{ home.title }}" src="{{ site.url }}{{ home.image }}">
+                <img alt="{{ site.data.home.title }}" src="{{ site.url }}{{ site.data.home.image }}">
             </figure>
         </div>
 
     </div>
-{% endfor %}
+ 
 </div>
