@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: test-repo
   branch: master # Branch to update (master by default)
   
 media_folder: 'images/uploads'
@@ -10,6 +10,9 @@ collections:
 
 - name: "home"
   label: "Inicial"
+  create: true
+  editor:
+    preview: false
   files:
     - label: "Home"
       name: "home-page"
@@ -22,15 +25,15 @@ collections:
 
 # Menu navigation 
 
-- name: "menu"
+- name: "nav"
   label: "Menu"
   editor:
     preview: false
   files:
     - label: "Menu"
-      name: "menu"
+      name: "navigation"
       file: "_data/nav.yml"
       widget: "list"
       fields:
-        - {label: "Menu", name: name, widget: string}
-        - {label: "link", name: link, widget: string}
+        - {label: "Menu", name: title, widget: string}
+        - {label: "Link", name: url, widget: string}
