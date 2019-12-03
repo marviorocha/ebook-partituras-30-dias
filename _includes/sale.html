@@ -14,28 +14,27 @@
     </div>
     <!-- start section card -->
 
-    {% for sale in site.data.sale  %}
+   
     <div class="columns ">
 
       <div class="column is-offset-1 has-text-centered">
         <section class="section">
-          <h1 class="title is-1">{{ sale.title }}</a></h1>
-          <h2 class="subtitle is-5">{{ sale.subtitle }}</h2>
-          <h2 class="title is-2 has-text-danger"> R$ {{ sale.price }}</h2>
-          <a target="_blank" href="{{ sale.buynow }}" class="button is-medium is-info is-rounded">Comprar Agora</a>
+          <h1 class="title is-1">{{ site.data.sale.title }}</a></h1>
+          <h2 class="subtitle is-5">{{ site.data.sale.subtitle }}</h2>
+          <h2 class="title is-2 has-text-danger"> R$ {{ site.data.sale.price }}</h2>
+          <a target="_blank" href="{{ site.data.sale.link }}" class="button is-medium is-info is-rounded">{{ site.data.sale.button }}</a>
         </section>
 
       </div>
       <div class="column is-6">
         <figure class="image is-550x600">
-          <img alt="Comprar curso de teoria musical" src="{{ site.url }}{{ sale.image }}">
+          <img alt="Comprar curso de teoria musical" src="{{ site.url }}{{ site.data.sale.image }}">
           </p>
         </figure>
       </div>
 
     </div> <!-- // end column -->
 
-    {% endfor %}
   </div>
 </div>
 

@@ -8,9 +8,30 @@ media_folder: 'images/uploads'
 collections:
 
 # Home Page Settings
+- name: "config"
+  label: "Site Config"
+  editor: 
+    preview: false
+  files:
+    - label: "Geral"
+      name: "geral"
+      file: "_data/global.yml"
+      fields:
+        - {lavel: Title, name: title, widget: string}
+    - label: "Navigation"
+      name: "navigation"
+      file: "_data/nav.yml"
+      fields:
+        - label: "Itens do menu"
+          name: "items"
+          widget: "list"
+          fields:
+            - {label: Name, name: title, widget: string}
+            - {label: Link, name: url, widget: string}
+
 
 - name: "home"
-  label: "Inicial"
+  label: "Ebook"
   editor:
     preview: false
   files:
@@ -22,18 +43,18 @@ collections:
         - {label: "Ebook Imagem", name: "image", widget: "image", default: "/images/ebook-medium.png"}
         - {label: "Descrição", name: "description", widget: "text"}
         - {label: "Button URL", name: "buynow", widget: "string"}
-
-# Menu navigation 
-
-- name: "nav"
-  label: "Menu"
+- name: "Faq"
+  label: "Faq"
   editor:
     preview: false
   files:
-    - label: "Menu"
-      name: "navigation"
-      file: "_data/nav.yml"
-      widget: "list"
+    - label: "FAQ"
+      name: "faq"
+      file: "_data/faq.yml"
       fields:
-        - {label: "Menu", name: title, widget: string}
-        - {label: "Link", name: url, widget: string}
+        - label: "FAQ"
+          name: "Item faq"
+          widget: "list"
+          fields:
+            - {label: Section, name: section, widget: string}
+            - {label: Descripion, name: description, widget: text}

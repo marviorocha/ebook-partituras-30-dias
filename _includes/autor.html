@@ -6,7 +6,7 @@
 
 			<div class="column is-half is-8">
 				<h1 class="title has-text-centered">
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, tenetur?
+					{{ site.data.author.title }}
 				</h1>
 			</div>
 
@@ -16,15 +16,15 @@
 
 					<div class="column is-4">
 						<figure class="image is-squere">
-							<img alt="Autor" src="/images/my_avatar.jpg">
+							<img alt="Autor" src="{{ site.data.author.image }}">
 						</figure>
 					</div>
 					<div class="column is-offset-1 is-4">
 						<h1 class="title is-4">
-							Marvio Rocha
+							{{ site.data.author.name }}
 						</h1>
 						<p class="content">
-							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias provident fugiat consequuntur modi? Officia eaque veritatis adipisci libero voluptatem error distinctio voluptatum aliquam, quisquam ab placeat, amet accusamus earum aperiam.
+							{{ site.data.author.description }}
 						</p>
 					</div>
 				</div>

@@ -8,12 +8,10 @@
   <div class="columns is-centered">
     <div class="column is-9 is-half ">
       
-      <h1 class="title is-2 has-text-centered">Consectetur labore excepturi harum voluptatibus?</h1>
-      <h2 class="subtitle is-5 has-text-centered"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga deleniti accusamus
-        nihil libero doloribus odit voluptatem deserunt, odio vel quos consectetur similique quidem sed! Temporibus
-        necessitatibus nisi, ab delectus suscipit ipsa animi, odio molestias illo soluta.</h2>
+      <h1 class="title is-2 has-text-centered">{{ site.data.faq.title }}</h1>
+      <h2 class="subtitle is-5 has-text-centered">{{ site.data.faq.subtitle }}</h2>
         <section class="section">
-          {% for faq in site.data.faq %}
+          {% for faq in site.data.faq.part %}
           
           <button class="accordion"> <h5 class="title is-5 has-text-weight-bold"><i class="fas fa-plus"></i> {{ faq.section }}</h5> </button>
           <div class="panel">

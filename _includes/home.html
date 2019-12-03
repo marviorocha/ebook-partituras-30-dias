@@ -1,7 +1,7 @@
 <a name="link1"></a>
 <div class="container">
 
- 
+
     <div class="columns">
         <div class="column is-offset-1 is-5">
             <section class="section">
@@ -11,7 +11,8 @@
                 <h2 class="subtitle is-5">
                     {{ site.data.home.description | truncate: 300}}
                 </h2>
-                <a target="_blank" href="{{ site.data.home.buynow }}" class="button is-medium is-info is-rounded">Comprar Agora</a>
+                <a target="_blank" href="{{ site.data.home.link }}"
+                    class="button is-medium is-info is-rounded">{{ site.data.home.button }}</a>
             </section>
         </div>
         <div class="column is-6">
@@ -22,5 +23,5 @@
         </div>
 
     </div>
- 
+
 </div>
