@@ -1,8 +1,8 @@
 backend:
-  name: github
-  repo: marviorocha/ebook-partituras-30-dias
-  branch: master # Branch to update (master by default)
-  
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+  site_url: https://your-site.com
+  display_url: https://your-site.com
 media_folder: 'images/uploads'
 
 collections:
@@ -11,12 +11,11 @@ collections:
 
 - name: "home"
   label: "Inicial"
-  create: true
   editor:
     preview: false
   files:
     - label: "Home"
-      name: "home-page"
+      name: "home"
       file: "_data/home.yml"
       fields:
         - {label: "Titulo", name: "title", widget: "string"}
