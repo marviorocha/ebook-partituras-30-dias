@@ -43,7 +43,7 @@ collections:
       file: "_data/depoiment.yml"
       fields:
         - label: "Depoimentos"
-          name: "depoimentos"
+          name: "depoiment"
           widget: "list"
           fields:
             - {label: Name, name: name, widget: string}
