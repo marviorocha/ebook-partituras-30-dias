@@ -1,13 +1,9 @@
- 
 title: Lorem
 subtitle: lorem ipson dolore content
-
-part:
-  - section: Como é o curso na plataforma Pro Edu?
-    description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus impedit cupiditate. 
-
-  - section: Secion 2
-    description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus impedit cupiditate. 
-
-  - section: Secion 3
-    description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus impedit cupiditate. 
+Item faq:
+  - description: >-
+      Não, e-book não é um livro impresso como os tradicionais. E-book é em
+      formato digital, que pode ser lido em equipamentos eletrônicos -
+      computadores, PDAs, Leitor de livros digitais ou até mesmo celulares que
+      suportem esse recurso, existindo ou não sua versão em papel
+    section: É um livro impresso?
