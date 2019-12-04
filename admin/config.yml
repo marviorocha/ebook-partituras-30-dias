@@ -1,5 +1,6 @@
 backend:
-  name: test-repo
+  name: github
+  repo: marviorocha/ebook-partituras-30-dias
   branch: master # Branch to update (optional; defaults to master)
   site_url: https://partituras30dias.showbiz.mus.br/
   display_url: https://partituras30dias.showbiz.mus.br/
