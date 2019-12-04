@@ -77,9 +77,10 @@ collections:
       name: "sale"
       file: "_data/sale.yml"
       fields:
-        - {label: "Titulo", name: "sele_title", widget: "string"}
+        - {label: "Titulo", name: "title", widget: "string"}
+        - {label: "Titulo", name: "subtitle", widget: "string"}
         - {label: "Price", name: price, widget: "string"}
-        - {label: "Descrição", name: sele_description, widget: "text"}
+        - {label: "Descrição", name: description, widget: "text"}
         - {label: "Link", name: "link", widget: "string"}
         - {label: "Button", name: "button", widget: "string"}
         - {label: "Ebook Imagem", name: "image", widget: "image", default: "/images/ebook-medium.png"}

@@ -1,6 +1,7 @@
-sele_title: Adquira agora o seu e-book
+title: Adquira agora o seu e-book
+subtitle: Um treinamento diferenciado.
 price: '19.90'
-sele_description: 'Aproveite nosso super desconto de: <s>47.90</> por apenas:'
+description: 'Aproveite nosso super desconto de: <s>47.90</> por apenas:'
 link: >-
   https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=96281217-ade156f4-a077-4a47-844e-1275fd4a3ce5
 button: Comprar
