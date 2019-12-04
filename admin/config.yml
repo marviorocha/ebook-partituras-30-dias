@@ -66,8 +66,8 @@ collections:
         - {label: "Titulo", name: "title", widget: "string"}
         - {label: "Ebook Imagem", name: "image", widget: "image", default: "/images/ebook-medium.png"}
         - {label: "Descrição", name: "description", widget: "text"}
+        - {label: "Call to Action", name: "button", widget: "string"}
         - {label: "URL", name: "link", widget: "string"}
-        - {label: "Button", name: "button", widget: "string"}
 
 # Sale Page _data/sale.yml
 
