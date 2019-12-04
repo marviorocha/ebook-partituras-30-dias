@@ -4,4 +4,4 @@
 
 # Developer new landing page for my website.
 
-[Logo Master Music Academy](/images/logo.png)
+[![Logo Master Music Academy)(http://partituras30dias.showbiz.mus.br)](/images/logo.png)
