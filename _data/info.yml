@@ -1,18 +1,8 @@
-# info title sites
-
 info_title: Dolor eveniet officia esse minusi
 info_description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt
-
-info:
-  - title: Lorem ipsomi dolorAdipisicing
-    description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus impedit cupiditate. 
-    icon: heart
-
-  - title: Lorem ipsomi dolorAdipisicing
-    description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus impedit cupiditate. 
+section:
+  - description: >-
+      Muitas pessoas acham difícil entender a leitura de partituras. Mais em
+      nosso e-Book você aprende de verdade de maneira simples.
     icon: music
-
-  - title: Lorem ipsomi dolorAdipisicing
-    description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus impedit cupiditate. 
-    icon: headphones
-
+    title: Teoria Musical Descomplicada
