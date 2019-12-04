@@ -82,6 +82,24 @@ collections:
         - {label: "Button", name: "button", widget: "string"}
         - {label: "Ebook Imagem", name: "image", widget: "image", default: "/images/ebook-medium.png"}
 
+
+# Author Setting Page
+- name: "author"
+  label: "Author"
+  editor:
+    preview: false
+  files:
+    - label: "Author"
+      name: "autor"
+      file: "_data/author.yml"
+      fields:
+        - {label: Title, name: title, widget: string}
+        - {label: Name, name: name, widget: string}
+        - {label: Descrição, name: description, widget: string}
+        - {label: Foto, name: image, widget: image}
+
+
+
 # FAQ Page
 - name: "Faq"
   label: "Faq"
@@ -102,8 +120,8 @@ collections:
             - {label: Descripion, name: description, widget: text}
 
 # sale page for build
-- name: "Section"
-  label: "Add Section"
+- name: "section"
+  label: "Sections"
   editor:
     preview: false
   files:
