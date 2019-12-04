@@ -3,7 +3,7 @@ backend:
   repo: marviorocha/ebook-partituras-30-dias
   branch: master # Branch to update (optional; defaults to master)
   site_url: https://partituras30dias.showbiz.mus.br/
-  display_url: https://partituras30dias.showbiz.mus.br/
+
 media_folder: 'images/uploads'
 
 collections:
@@ -95,7 +95,7 @@ collections:
       fields:
         - {label: Title, name: title, widget: string}
         - {label: Name, name: name, widget: string}
-        - {label: Descrição, name: description, widget: string}
+        - {label: Descrição, name: description, widget: markdown}
         - {label: Foto, name: image, widget: image}
 
 
