@@ -113,7 +113,7 @@ collections:
         - {label: Title, name: title, widget: string}
         - {label: Sub title, name: subtitle, widget: string}
         - label: "FAQ"
-          name: "faq"
+          name: "part"
           widget: "list"
           fields:
             - {label: Section, name: section, widget: string}
