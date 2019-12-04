@@ -1,25 +1,13 @@
-depoiment_title: Title the depiment here
-depoiment_description:  Lorem ipsum dolor sit amet, consectetur adipisicing 
-
-
-depoiment:
-  - name: Juju
-    description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus 
-    city: Campos-RJ
-    foto: https://bulma.io/images/placeholders/128x128.png
-
-  - name: Mislene 
-    description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus 
-    city: Macaé 
-    foto: https://bulma.io/images/placeholders/128x128.png
-
-  - name: Guilherme
-    description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus 
-    city: Campos-RJ
-    foto: https://bulma.io/images/placeholders/128x128.png
-
-  - name: Diego
-    description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus 
-    city: Macaé
-    foto: https://bulma.io/images/placeholders/128x128.png
-
+depoimentos:
+  - city: Minas Gerais
+    description: >-
+      "Superou minhas expectativas. Foi ótimo conhecer o Curso de Teoria
+      Musical, conteúdo bem simples e super fácil de entender. Recomendo…"
+    image: /images/uploads/91.jpg
+    name: Josué Santos
+  - city: São Bernado - SP
+    description: >-
+      O Curso de Teoria Musical, sim é um espetáculo, aulas com (especificação)
+      verdadeiro muito bom, fácil compreensão e entendimento.
+    image: /images/uploads/uvftepe.jpg
+    name: Kelen Maia
