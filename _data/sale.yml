@@ -1,10 +1,7 @@
-sele_title: Adquira agora seu exemplar
-sele_description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime
-  
-price: "19.90"
-title: Por apenas
-subtitle: "Super desconto de: <s>47.90</s> por apenas"
-image: /images/ebook-medium.png
-description: lorem ipsom dolorAdipisicing aliquid odio eaque quo maxime Nesciunt necessitatibus impedit cupiditate.
-link: https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=96281217-ade156f4-a077-4a47-844e-1275fd4a3ce5
+sele_title: Adquira agora o seu e-book
+price: '19.90'
+sele_description: 'Aproveite nosso super desconto de: <s>47.90</> por apenas:'
+link: >-
+  https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=96281217-ade156f4-a077-4a47-844e-1275fd4a3ce5
 button: Comprar
+image: /images/ebook-medium.png
