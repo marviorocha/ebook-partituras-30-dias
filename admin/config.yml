@@ -126,7 +126,7 @@ collections:
     preview: false
   files:
     - label: "Section"
-      name: "Sections site"  
+      name: "section_title"  
       file: "_data/info.yml"
       fields:
            - {label: Title, name: info_title, widget: string}
