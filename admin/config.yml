@@ -7,7 +7,15 @@ backend:
 media_folder: 'images/uploads'
 
 collections:
-
+- label: "Páginas"
+  name: "pagina"
+  folder: "_pagina"
+  create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Subtitle", name: "subtitle", widget: "string"}
+      - {label: "Youtube ID", name: "youtube", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
 # Home Page Settings
 - name: "config"
   label: "Site Config"
