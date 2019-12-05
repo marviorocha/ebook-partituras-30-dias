@@ -2,17 +2,20 @@ backend:
   name: github
   repo: marviorocha/ebook-partituras-30-dias
   branch: master # Branch to update (optional; defaults to master)
-  site_url: https://partituras30dias.showbiz.mus.br/
+site_url: https://partituras30dias.showbiz.mus.br
+logo_url: https://partituras30dias.showbiz.mus.br/images/logo.png
+display_url: https://partituras30dias.showbiz.mus.br
 
 media_folder: 'images/uploads'
 
 collections:
 - label: "Páginas"
   name: "pagina"
+  preview_path: /pagina/{{slug}}
   folder: "_pagina"
   create: true
   fields:
-      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'page' }
+      - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'page' }
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Subtitle", name: "subtitle", widget: "string"}
       - {label: "Youtube ID", name: "youtube", widget: "string", required: false}
