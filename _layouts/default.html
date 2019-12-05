@@ -2,8 +2,8 @@
 <html class="has-navbar-fixed-top">
 
 <head>
-  <title>{% if site.data.global.set_title %}{{ site.data.global.set_title }} – {{ site.data.global.set_description | truncate: 120}} {% endif %}{{ site.name }} – {{ site.name }}</title>
-
+  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+  
   {% include meta.html %}
 
   <!--[if lt IE 9]>
