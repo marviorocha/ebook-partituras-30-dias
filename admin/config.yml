@@ -12,6 +12,7 @@ collections:
   folder: "_pagina"
   create: true
   fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'page' }
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Subtitle", name: "subtitle", widget: "string"}
       - {label: "Youtube ID", name: "youtube", widget: "string", required: false}

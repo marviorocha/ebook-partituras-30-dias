@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Obrigado!
 subtitle: Obrigado por você adquirir nosso produto
 youtube: 4zQex5Y3v04
