@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: test-repo
   repo: marviorocha/ebook-partituras-30-dias
   branch: master # Branch to update (optional; defaults to master)
   site_url: https://partituras30dias.showbiz.mus.br/
@@ -7,7 +7,15 @@ backend:
 media_folder: 'images/uploads'
 
 collections:
-
+- label: "Páginas"
+  name: "pagina"
+  folder: "_pagina"
+  create: true
+  fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Subtitle", name: "subtitle", widget: "string"}
+      - {label: "Youtube ID", name: "youtube", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
 # Home Page Settings
 - name: "config"
   label: "Site Config"
@@ -42,6 +50,8 @@ collections:
       name: "depoiment"
       file: "_data/depoiment.yml"
       fields:
+        - {label: Title, name: title, widget: string}
+        - {label: Subtitle, name: subtitle, widget: string}
         - label: "Depoimentos"
           name: "depoiment"
           widget: "list"
@@ -75,9 +85,10 @@ collections:
       name: "sale"
       file: "_data/sale.yml"
       fields:
-        - {label: "Titulo", name: "sele_title", widget: "string"}
+        - {label: "Titulo", name: "title", widget: "string"}
+        - {label: "Titulo", name: "subtitle", widget: "string"}
         - {label: "Price", name: price, widget: "string"}
-        - {label: "Descrição", name: sele_description, widget: "text"}
+        - {label: "Descrição", name: description, widget: "text"}
         - {label: "Link", name: "link", widget: "string"}
         - {label: "Button", name: "button", widget: "string"}
         - {label: "Ebook Imagem", name: "image", widget: "image", default: "/images/ebook-medium.png"}

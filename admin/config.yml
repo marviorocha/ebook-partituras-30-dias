@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: test-repo
   repo: marviorocha/ebook-partituras-30-dias
   branch: master # Branch to update (optional; defaults to master)
   site_url: https://partituras30dias.showbiz.mus.br/
@@ -11,10 +11,10 @@ collections:
   name: "pagina"
   folder: "_pagina"
   create: true
-    fields:
+  fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Subtitle", name: "subtitle", widget: "string"}
-      - {label: "Youtube ID", name: "youtube", widget: "string"}
+      - {label: "Youtube ID", name: "youtube", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 # Home Page Settings
 - name: "config"
