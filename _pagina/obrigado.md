@@ -2,7 +2,7 @@
 layout: page
 title: Obrigado
 subtitle: Obrigado pro adquirir nossos produtos
-youtube: 4zQex5Y3v04
+youtube: ''
 ---
 # Parabéns!
 
